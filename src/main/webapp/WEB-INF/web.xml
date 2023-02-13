@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>servletTelcel</servlet-name>
+    <servlet-class>controllers.servletTelcel</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>errores</servlet-name>
+    <servlet-class>view.errores</servlet-class>
+  </servlet>
+  <servlet>
+    <description>
+		</description>
+    <display-name>SvPdf</display-name>
+    <servlet-name>SvPdf</servlet-name>
+    <servlet-class>controllers.SvPdf</servlet-class>
+  </servlet>
+  <servlet>
+    <description>
+		</description>
+    <display-name>crearPDF</display-name>
+    <servlet-name>crearPDF</servlet-name>
+    <servlet-class>controllers.crearPDF</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletTelcel</servlet-name>
+    <url-pattern>/servletTelcel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>errores</servlet-name>
+    <url-pattern>/errores</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SvPdf</servlet-name>
+    <url-pattern>/SvPdf</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>crearPDF</servlet-name>
+    <url-pattern>/crearPDF</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Faces Servlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>/faces/*</url-pattern>
+  </servlet-mapping>
+</web-app>
